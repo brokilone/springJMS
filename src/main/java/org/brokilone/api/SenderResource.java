@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 public class SenderResource {
-  private Sender sender;
+  private final Sender sender;
   @Value("${brokilone.jms.queue}")
   private String queueName;
 

@@ -1,13 +1,7 @@
 server:
   port: 8090
 app:
-  brokerUrl: "tcp://localhost:61616"
-  userName: "admin"
-  password: "admin"
   tjmQueue: "jms-tjm"
-  messageType: "TEXT"
-
-brokilone:
-  jms:
-    queue: "brokilone.jms.queue"
-    queueObject: "brokilone.jms.queue.object"
+kafbroker:
+  bootstrapAddress: "localhost:9092"
+  groupId: "default"

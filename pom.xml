@@ -16,6 +16,7 @@
         <spring-jms.ver>5.3.7</spring-jms.ver>
         <jms.ver>2.0.1</jms.ver>
         <log.ver>2.14.1</log.ver>
+        <kafka.ver>2.7.2</kafka.ver>
     </properties>
 
     <dependencies>
@@ -48,6 +49,19 @@
             <groupId>org.apache.logging.log4j</groupId>
             <artifactId>log4j-core</artifactId>
             <version>${log.ver}</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.springframework.kafka/spring-kafka -->
+        <dependency>
+            <groupId>org.springframework.kafka</groupId>
+            <artifactId>spring-kafka</artifactId>
+            <version>${kafka.ver}</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-configuration-processor -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-configuration-processor</artifactId>
+            <version>${spring-boot.ver}</version>
+            <optional>true</optional>
         </dependency>
 
     </dependencies>
